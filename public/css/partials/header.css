@@ -37,7 +37,6 @@
     flex: 1;
     display: flex;
     justify-content: center;
-    padding-bottom: 5px;
 }
 
 .search-form {
@@ -51,8 +50,7 @@
 
     background: var(--bg);
     border-radius: 999px;
-    border: 1px solid var(--accent-2);
-    box-shadow: 0 2px 5px var(--accent-2);
+    border: 2px solid var(--accent-2);
 }
 
 .search-form:focus-within {
@@ -139,13 +137,25 @@
     margin-left: 25px;
 }
 
-.signin-button {
+.login-button {
     color: var(--accent-2);
     font-size: 1.2rem;
     font-weight: bold;
     transition: 0.15s ease
 }
 
-.signin-button:hover {
+.login-button:hover {
     color: var(--accent-3);
+}
+
+.header-profile-image {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--accent-2);
+    border-radius: 50%;
+    transition: 0.2s ease;
+}
+
+.header-profile-image:hover {
+    box-shadow: 0px 0px 6px 2px var(--accent-2);
 }

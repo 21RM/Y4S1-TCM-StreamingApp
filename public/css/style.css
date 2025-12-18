@@ -10,6 +10,8 @@
     --accent-2: #a44322;
     --accent-3: #f8bc04;
     --text: #eee6cd;
+    --text-muted: #888888;
+    --transparent: #00000000;
 }
 
 
@@ -24,11 +26,15 @@ html, body {
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family: sans-serif;
     background: var(--bg);
     color: var(--text, #eee6cd);
     display: flex;
     flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 .blank-button {
@@ -42,9 +48,23 @@ body {
 
 .video-grid {
     display: grid;
-    grid-template-columns: 1fr; 
-    max-width: 800px;
-    margin: 6rem auto 0; 
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     gap: 1.25rem;
     padding: 1.5rem 1rem;
+    max-width: 100%;
+    margin: 6rem auto 0; 
+    justify-content: center;
 }
+
+.active-flex {
+    display: flex;
+}
+
+
+/* LIBRARY */
+
+.library-layout {
+    margin-top: 100px;
+}
+
+/* ------- */
